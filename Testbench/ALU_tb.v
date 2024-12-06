@@ -1,4 +1,4 @@
-`include "ALU.v"
+`include "../Modules/ALU.v"
 
 module ALU_tb;
   reg [31:0] operand1;
