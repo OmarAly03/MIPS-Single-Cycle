@@ -19,4 +19,15 @@ module dataMemory
             dataMemory[Address[addressWidth - 1:2]] <= WD;
         end
     end
+    
+      task dump_memory;
+    begin
+      $display("---- Data Memory Contents ----");
+     
+      $display("R[%0d] = %h", 20, dataMemory[20]);
+      $display("R[%0d] = %h", 21, dataMemory[21]);
+      
+      $display("--------------------------------");
+    end
+  endtask
 endmodule
